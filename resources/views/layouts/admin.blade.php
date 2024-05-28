@@ -50,6 +50,60 @@
         <!-- Divider -->
         <hr class="sidebar-divider">
 
+        <!-- Crud -->
+        <div class="sidebar-heading">
+            {{ __('Crud') }}
+        </div>
+
+        <!-- Nav Item - Personas -->
+        <li class="nav-item {{ Nav::isRoute('usuarios.index') }}">
+            <a class="nav-link" href="{{ route('usuarios.index') }}">
+                <i class="fas fa-fw fa-users"></i>
+                <span>{{ __('Usuarios') }}</span>
+            </a>
+        </li>
+
+        <!-- Nav Item - Pais -->
+        <li class="nav-item">
+            <a class="nav-link" href="{{ route('paises.index') }}">
+                <i class="fas fa-fw fa-globe"></i>
+                <span>{{ __('Paises') }}</span>
+            </a>
+        </li>
+
+        <!-- Nav Item - Departamentos -->
+        <li class="nav-item {{ Nav::isRoute('departamentos.index') }}">
+            <a class="nav-link" href="{{ route('departamentos.index') }}">
+                <i class="fa-solid fa-house"></i>
+                <span>{{ __('Departamentos') }}</span>
+            </a>
+        </li>
+
+        <!-- Nav Item - Alquiler -->
+        <li class="nav-item {{ Nav::isRoute('alquileres.index') }}">
+            <a class="nav-link" href="{{ route('alquileres.index') }}">
+                <i class="fa-solid fa-house"></i>
+                <span>{{ __('Alquileres') }}</span>
+            </a>
+        </li>
+
+        <!-- Nav Item - Inquilino -->
+        <li class="nav-item {{ Nav::isRoute('inquilinos.index') }}">
+            <a class="nav-link" href="{{ route('inquilinos.index') }}">
+                <i class="fas fa-fw fa-users"></i>
+                <span>{{ __('Inquilinos') }}</span>
+            </a>
+        </li>
+
+        <!-- Nav Item - Inquilino -->
+        <li class="nav-item {{ Nav::isRoute('propietarios.index') }}">
+            <a class="nav-link" href="{{ route('propietarios.index') }}">
+                <i class="fas fa-fw fa-users"></i>
+                <span>{{ __('Propietarios') }}</span>
+            </a>
+        </li>
+
+
         <!-- Heading -->
         <div class="sidebar-heading">
             {{ __('Settings') }}
